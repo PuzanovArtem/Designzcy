@@ -1,0 +1,95 @@
+.hero{
+    display: flex;
+    display: block;
+	width: 100%;
+	left: 0;
+	z-index: 50;
+    &__body{
+        display: flex;
+        margin-top: 48px;
+        color: $BaseColor;
+    }
+
+}
+
+.hero__block__left{
+    margin: 36px 0px 0px  45px;
+    .hero__title{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 85px;
+        max-width: 515px;
+        
+    }
+    .hero__text{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 536px;
+        margin:  42px 0px 0px 0px ; 
+    }
+    .hero__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 219px;
+        height: 53px;
+        color: $WhiteColor;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        background: linear-gradient(2.79deg, #F35F2F -13.68%, rgba(243, 95, 47, 0.75) 121.16%);
+        opacity: 0.85;
+        border-radius: 5px;
+        margin:  41px 0px 0px -1px ; 
+    }
+}
+
+.hero__block__right{
+    // margin:  0px 0px 0px 62px ; 
+    margin:  0px 0px 0px 3.83vw ; 
+}
+
+@media(max-width:1440px){
+    .hero__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .hero__block__left{
+            // position: absolute;
+            // order: 2;
+            .hero__title{
+                font-size: 72px;
+                line-height: 85px;
+                
+            }
+            .hero__text{
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        .hero__block__right{
+            display: none;
+            .hero__image{
+                z-index: -2;
+                // order: 1;
+                margin: 0 auto;
+                opacity: 0.4;
+            }
+        }
+    }
+    
+
+}
+@media(max-width:$width576){
+    .hero__block__left{
+        margin: 36px 0px 0px  45px;
+    }
+}

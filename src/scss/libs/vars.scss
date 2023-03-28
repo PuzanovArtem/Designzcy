@@ -1,0 +1,22 @@
+
+$fontFamilyBase: 'DMSans';
+$fontWeightBase: 400;
+$fontSizeBase: 24px;
+$BaseColor:#3D3D3F;
+$GrayColor:#595959;
+$WhiteColor:#FFFFFF;
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1440px;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1256px;
+// Общий отступ у контейнера
+// (184= по 92px слева и справа, 0 = нет отступа)
+$containerPadding: 184;
+
+$width1440:1440px;
+$width1200: 1200px;
+$width1024: 1024px;
+$width767:767px;
+$width576: 576px;
